@@ -28,7 +28,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'murmuring-wave-99231.herokuapp.com/'
+    'murmuring-wave-99231.herokuapp.com'
 ]
 
 
