@@ -1,0 +1,1 @@
+web: gunicorn Daily_news.wsgi
