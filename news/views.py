@@ -31,10 +31,10 @@ for th in toi_headings:
 
 
 
-ht_r = requests.get("https://www.hindustantimes.com/india-news/")
+ht_r = requests.get("https://www.lokmat.com/career/")
 ht_soup = BeautifulSoup(ht_r.content, 'html5lib')
-ht_headings = ht_soup.findAll("div", {"class": "headingfour"})
-ht_headings = ht_headings[2:]
+ht_headings = ht_soup.findAll("h2")
+ht_headings = ht_headings[2:-2]
 ht_news = []
 
 for hth in ht_headings:
@@ -87,5 +87,5 @@ def register(request):
             print("Error occurred...")
             return HttpResponseRedirect(reverse('login'))
         login(request, user)
-        return HttpResponseRedirect(reverse('home'))
+         return HttpResponseRedirect(reverse('home'))
     

@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-+iyt$1**@*s!qs0al1@qq1yg-ly_-!d058nxh@lw$+2bj_b1d='
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'django-insecure-+iyt$1**@*s!qs0al1@qq1yg-ly_-!d058nxh@lw$+2bj_b1d='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -140,7 +140,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'testingapp1950@gmail.com'
-EMAIL_HOST_PASSWORD = os.environ['MAIL']
+EMAIL_HOST_PASSWORD = 'cwxpsyhszsxpatwu'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
